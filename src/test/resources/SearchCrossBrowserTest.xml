@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LogInCrossBrowserTestSuite" verbose="1" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="utils.TestListener" />
+    </listeners>
+
+    <test name="SearchTest-Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.SearchTest">
+                <methods>
+                    <include name="searchTestWithSearchButton"></include>
+                </methods>
+                <methods>
+                    <include name="searchTestWithEnterButton"></include>
+                </methods>
+                <methods>
+                    <include name="searchByImageTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="SearchTest-Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.SearchTest">
+                <methods>
+                    <include name="searchTestWithSearchButton"></include>
+                </methods>
+                <methods>
+                    <include name="searchTestWithEnterButton"></include>
+                </methods>
+                <methods>
+                    <include name="searchByImageTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
