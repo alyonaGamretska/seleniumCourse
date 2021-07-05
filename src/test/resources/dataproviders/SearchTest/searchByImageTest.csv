@@ -1,3 +1,3 @@
 no,filepath,filename
-1,/Users/admin/Desktop/DSC_0179.jpg,DSC_0179.jpg
-2,/Users/admin/Downloads/giphy.gif,giphy.gif
+1,src/test/resources/dataproviders/Files/DSC_0179.jpg,DSC_0179.jpg
+2,src/test/resources/dataproviders/Files/giphy.gif,giphy.gif

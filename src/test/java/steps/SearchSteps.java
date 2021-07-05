@@ -3,7 +3,6 @@ package steps;
 import org.openqa.selenium.WebDriver;
 import pages.SearchImagePage;
 import pages.SearchPage;
-import pages.SearchResultsPage;
 import pages.YoutubeHomePage;
 
 public class SearchSteps extends BaseSteps {

@@ -2,7 +2,7 @@
 
 <suite name="LogInCrossBrowserTestSuite" verbose="1" parallel="tests" thread-count="2">
     <listeners>
-        <listener class-name="utils.TestListener" />
+        <listener class-name="utils.TestListener"/>
     </listeners>
 
     <test name="SearchTest-Chrome">
@@ -10,7 +10,7 @@
         <classes>
             <class name="tests.SearchTest">
                 <methods>
-                    <include name="searchTestWithSearchButton"></include>
+                    <include name="searchTextWithSearchButton"></include>
                 </methods>
                 <methods>
                     <include name="searchTestWithEnterButton"></include>
